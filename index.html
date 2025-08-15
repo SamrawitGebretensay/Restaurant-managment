@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bites | Delicious Food & Drinks</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header -->
+     <script src="script.js"></script>
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Savory<span>Bites</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Delicious Food Delivered To Your Table</h1>
+            <p>Experience the finest dining with our carefully crafted menu featuring fresh ingredients and authentic flavors.</p>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Delicious Menu</h2>
+                <p>Choose from our selection of mouth-watering dishes and refreshing drinks</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="food">Food</button>
+                <button class="menu-tab" data-category="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-items">
+                <!-- Food Items -->
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Classic Burger">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Classic Burger</h3>
+                            <span>$12.99</span>
+                        </div>
+                        <p class="menu-item-desc">Juicy beef patty with lettuce, tomato, onion, and our special sauce on a toasted bun.</p>
+                        <button class="add-to-cart" data-id="1" data-name="Classic Burger" data-price="12.99">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Garden Salad">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Garden Salad</h3>
+                            <span>$9.99</span>
+                        </div>
+                        <p class="menu-item-desc">Fresh mixed greens with cherry tomatoes, cucumber, carrots, and your choice of dressing.</p>
+                        <button class="add-to-cart" data-id="2" data-name="Garden Salad" data-price="9.99">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Margherita Pizza">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Margherita Pizza</h3>
+                            <span>$14.99</span>
+                        </div>
+                        <p class="menu-item-desc">Classic pizza with tomato sauce, fresh mozzarella, basil, and a drizzle of olive oil.</p>
+                        <button class="add-to-cart" data-id="3" data-name="Margherita Pizza" data-price="14.99">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Grilled Salmon">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Grilled Salmon</h3>
+                            <span>$18.99</span>
+                        </div>
+                        <p class="menu-item-desc">Fresh Atlantic salmon grilled to perfection with lemon butter sauce and seasonal vegetables.</p>
+                        <button class="add-to-cart" data-id="4" data-name="Grilled Salmon" data-price="18.99">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Chocolate Lava Cake">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Chocolate Lava Cake</h3>
+                            <span>$7.99</span>
+                        </div>
+                        <p class="menu-item-desc">Warm chocolate cake with a molten center, served with vanilla ice cream and fresh berries.</p>
+                        <button class="add-to-cart" data-id="5" data-name="Chocolate Lava Cake" data-price="7.99">Add to Order</button>
+                    </div>
+                </div>
+
+                <!-- Drink Items -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Fresh Lemonade">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Fresh Lemonade</h3>
+                            <span>$3.99</span>
+                        </div>
+                        <p class="menu-item-desc">Homemade lemonade with freshly squeezed lemons and a hint of mint.</p>
+                        <button class="add-to-cart" data-id="6" data-name="Fresh Lemonade" data-price="3.99">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1453824979084-c8fd42932378?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Iced Coffee">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Iced Coffee</h3>
+                            <span>$4.49</span>
+                        </div>
+                        <p class="menu-item-desc">Cold brewed coffee served over ice with your choice of milk and sweetener.</p>
+                        <button class="add-to-cart" data-id="7" data-name="Iced Coffee" data-price="4.49">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1551029506-0807df4e2031?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Strawberry Smoothie">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Strawberry Smoothie</h3>
+                            <span>$5.99</span>
+                        </div>
+                        <p class="menu-item-desc">Blended fresh strawberries with yogurt and a touch of honey.</p>
+                        <button class="add-to-cart" data-id="8" data-name="Strawberry Smoothie" data-price="5.99">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Craft Beer">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Craft Beer</h3>
+                            <span>$6.99</span>
+                        </div>
+                        <p class="menu-item-desc">Local craft beer selection - ask your server for today's options.</p>
+                        <button class="add-to-cart" data-id="9" data-name="Craft Beer" data-price="6.99">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Red Wine">
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h3>Red Wine</h3>
+                            <span>$8.99</span>
+                        </div>
+                        <p class="menu-item-desc">Glass of premium red wine from our curated selection.</p>
+                        <button class="add-to-cart" data-id="10" data-name="Red Wine" data-price="8.99">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order" id="order">
+        <div class="container order-container">
+            <div class="order-summary">
+                <h3>Your Order</h3>
+                <div class="order-items" id="order-items">
+                    <!-- Order items will be added here dynamically -->
+                    <p class="empty-cart-message">Your cart is empty. Add some delicious items from our menu!</p>
+                </div>
+                <div class="order-total">
+                    <span>Total:</span>
+                    <span id="order-total">$0.00</span>
+                </div>
+                <button class="btn checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+            </div>
+
+            <div class="order-form" id="customer-info-form" style="display: none;">
+                <h3>Customer Information</h3>
+                <form id="customer-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="table">Table Number</label>
+                        <input type="text" id="table" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Special Instructions</label>
+                        <textarea id="notes" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Savory Bites</h3>
+                    <p>Delivering delicious meals with passion since 2010. Our commitment is to provide the best dining experience with fresh ingredients and exceptional service.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Culinary City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@savorybites.com</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 11am - 10pm</p>
+                    <p>Saturday: 10am - 11pm</p>
+                    <p>Sunday: 10am - 9pm</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Savory Bites. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Confirmation Modal -->
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Order Confirmed!</h2>
+            <p>Your order has been received by our kitchen. Thank you for dining with us!</p>
+            <p>An order confirmation has been sent to your email.</p>
+            <button class="btn" id="close-modal-btn">Continue Browsing</button>
+        </div>
+    </div>
+</body>
+</html>
